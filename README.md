@@ -1,3 +1,31 @@
+# React + Redux MovieApp with react_webpack_starter
+
+using TMDB API
+<https://www.themoviedb.org/documentation/api>
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+ReactWebpackStarter: <https://github.com/mileskingston/react_webpack_starter>
+
+### Stage 2
+
+* Icon component
+* Autocomplete searchbox
+* creat slider component
+* create actor/crew profiles pages
+* advanced pagination (first, last, 1, 2, 3)
+* animations
+* Lazy load component
+
+### Improvements
+
+* Redux multi (mulitple requests)
+* improve performance
+* improve code coverage - Pagination, FilmSearch, App
+* Testing store and other redux components
+
+### To do's
+
 # React and webpack starterpoint
 
 A starter point for creating a React app using Webpack 4 and Babel.
@@ -29,4 +57,4 @@ npm run build
 ### To do's
 
 * autoprefixer
-* fix svg loader
+* fix error when cache cleared and no data

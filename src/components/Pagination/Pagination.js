@@ -33,7 +33,7 @@ class Pagination extends PureComponent {
             disabled={props.currentPage === props.total_pages ? true : false}
             onClick={() => this.getPage(props.currentPage + 1)}
           >
-            <Icon name="arrowRight" />
+            <Icon name="arrowRight" width={20} />
           </Button>
         </li>
       </ul>

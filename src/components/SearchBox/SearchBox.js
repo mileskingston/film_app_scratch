@@ -49,7 +49,12 @@ class SearchBox extends PureComponent {
           classes="btn--search"
           onClick={e => this.handleClick(e, state.searchVal)}
         >
-          <Icon name="search" width={22} height={24} />
+          <Icon
+            name="search"
+            width={22}
+            fill="#fff" 
+            stroke="#fff"
+          />
         </Button>
       </form>
     );

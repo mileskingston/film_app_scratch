@@ -45,41 +45,24 @@ function Icon(props) {
     }
   };
 
-  function renderStyles() {
-    if (props.width) {
-      return {
-        width: props.width
-      };
-    } 
-    if (props.height) {
-       return {
-         height: props.height
-       }
-    }
-  }
-
-  function renderSvgStyles() {
-    if (props.stroke) {
-      return {
-        stroke: props.stroke
-      };
-    } 
-    if (props.fill) {
-       return {
-         fill: props.fill
-       }
-    }
-  }
-
   if (props.classes) {
     classes = classes.concat(props.classes.split(' '));
   }
 
   return (
-    <span className={classes.join(' ')} style={renderStyles()}>
+    <span
+      className={classes.join(' ')}
+      style={{
+        width: props.width ? props.width : null,
+        height: props.height ? props.height : null
+      }}
+    >
       <svg
         viewBox={icons[props.name].viewBox.join(' ')}
-        style={renderSvgStyles()}
+        style={{
+          stroke: props.stroke ? props.stroke : null,
+          fill: props.fill ? props.fill : null
+        }}
       >
         {icons[props.name].shape}
       </svg>
@@ -101,7 +84,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   classes: '',
   width: 20,
-  height: 20,
+  height: '',
   stroke: '',
   fill: ''
 };
