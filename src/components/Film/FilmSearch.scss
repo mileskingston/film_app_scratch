@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.latest-films {
+  .film {
+    flex-basis: 9%;
+    max-width: 9%;
+    
+    h3 {
+      margin-bottom: $spacing-s;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}
+
+.film-search__header {
+  display: flex;
+  flex: 1 1 100%;
+  font-size: 1.2rem;
+  margin: $spacing-r 0;
+
+  @media (min-width: $mobile-min) {
+    font-size: 1.6rem;
+    margin-top: $spacing-l;
+    margin-bottom: $spacing-l;
+  }
+
+  h3 {
+    margin-bottom: $spacing-s;
+  }
+
+  .films-search__totals {
+    font-size: 14px;
+    color: $grey;
+  }
+  .film-search__header-title {
+    flex: 1 auto;
+  }
+  .pagination {
+    flex: 1 auto;
+  }
+}

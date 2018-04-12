@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.lazy-load-image {
+  overflow: hidden;
+}
+.lazy-load-image__img {
+  transition: all 0.1s;
+}
+
+.is--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.is--fade-out {
+  opacity: 0;
+  height: 0;
+}
+.is--fade-in {
+  opacity: 1;
+  visibility: visible;  
+}

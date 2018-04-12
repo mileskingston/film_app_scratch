@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.message {
+  margin: $spacing-r 0;
+  padding: $spacing-s;
+  text-align: left;
+  border-radius: 3px;
+}
+
+.message--success {
+  color: $msg-success-text;
+  background-color: $msg-success;
+  border: 1px solid $msg-success-border;
+}
+.message--info {
+  color: $msg-info-text;
+  background-color: $msg-info;
+  border: 1px solid $msg-info-border;
+}
+.message--error {
+  color: $msg-error-text;
+  background-color: $msg-error;
+  border: 1px solid $msg-error-border;
+}

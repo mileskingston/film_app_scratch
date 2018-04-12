@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.films {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -$spacing-xs;
+  margin-right: -$spacing-xs;
+}

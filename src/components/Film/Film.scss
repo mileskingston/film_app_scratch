@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.film {
+  flex: 1 1 50%;
+  max-width: 50%;
+  margin-bottom: $spacing-s;
+  cursor: pointer;
+
+  @media (min-width: $mobile-min) {
+    flex: 1 1 33.3333%;
+    max-width: 33.3333%;
+    margin-bottom: $spacing-r;
+  }
+
+  @media (min-width: $desk-min) {
+    flex: 1 1 20%;
+    max-width: 20%;
+  }
+
+  a {
+    display: block;
+    height: 100%;
+    margin: 0 $spacing-xs;
+    color: $grey-dark;
+    background-color: #fff;
+    border: 1px solid $grey-lighter;
+    transition: border 0.15s, box-shadow 0.15s;
+    
+    &:hover {
+      border-color: $grey;
+      box-shadow: 0 0 2px 2px $grey-lighter;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+  }
+
+  h3 {
+    margin-bottom: 0;
+    line-height: 1.1;
+    color: $grey-dark;
+  }
+}
+
+.film__content {
+  padding:  $spacing-s;
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+/* Colors */
+$text-color: #f5f5f5!default;
+$brand-color: #61DAFB!default;
+$off-white: #eceaea!default;
+$grey: #5c5c5c!default;
+$grey-dark: #29292A!default;
+$grey-light: #9b9b9b!default;
+$grey-lighter: #ccc!default;
+$grey-lightest: #f1f1f1!default;
+
+$rating-high: #27ae60!default;
+$rating-mid: #e67e22!default;
+$rating-low: #c0392b!default;
+
+$msg-success: #d4edda!default;
+$msg-success-border: darken(#d4edda, 30%);
+$msg-success-text: darken(#d4edda, 60%);
+
+$msg-info: #fff3cd!default;
+$msg-info-border: darken(#fff3cd, 30%);
+$msg-info-text: darken(#fff3cd, 60%);
+
+$msg-error: #f8d7da!default;
+$msg-error-border: darken(#f8d7da, 30%);
+$msg-error-text: darken(#f8d7da, 60%);
+
+/* Spacing */
+$spacing-r: 20px!default;
+$spacing-xxs: ($spacing-r / 6);
+$spacing-xs: ($spacing-r / 4);
+$spacing-s: ($spacing-r / 2);
+$spacing-l: ($spacing-r * 2);
+
+/* Font */
+$font-f: 'Source Sans Pro', sans-serif!default;
+$font-w-n: 400;
+$font-w-b: 600;
+
+/* Font size */
+$font-r: 14px!default;
+$font-s: 12px!default;
+
+/* Screen widths */
+$tablet-p: 786px!default;
+$tablet-p-min: 787px!default;
+$tablet-l: 1024px!default;
+$mobile: 576px!default;
+$mobile-min: 577px!default;
+$desk: 992px!default;
+$desk-min: 993px!default;
+$desk-xl: 1200px!default;

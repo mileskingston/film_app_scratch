@@ -1,0 +1,109 @@
+@import './styles/variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $off-white;
+  color: $grey-dark;
+  font-family: $font-f;
+  font-weight: $font-w-n;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input, select, textarea, button {
+  font-size: 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0;
+
+  &:only-child, &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $spacing-r;
+  padding-right: $spacing-r;
+}
+.container--fixed {
+  max-width: 1600px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$spacing-r;
+  margin-right: -$spacing-r;
+
+  &--no-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.col {
+  max-width: 100%;
+  flex-basis: 100%;
+  padding-left: $spacing-r;
+  padding-right: $spacing-r;
+  @media (min-width: $mobile-min) {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+.col--3 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col--6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col--flex-grow-3 {
+  @media (min-width: $mobile-min) {
+    flex-grow: 3;
+  }
+}
+
+.is--hidden {
+  display: none;
+  @media (min-width: $mobile-min) {
+    display: inline-block;
+  }
+}

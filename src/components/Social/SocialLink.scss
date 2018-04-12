@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.social__link {
+  &:first-child .icon {
+    margin-left: 0;
+  }
+
+  .icon {
+    margin: 0 $spacing-s;
+  }
+}

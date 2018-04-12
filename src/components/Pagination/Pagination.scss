@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.pagination {
+  padding: $spacing-r 0;
+  margin: 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.btn.btn--pagination {
+    position: relative;
+    display: block;
+    padding: 0 .75rem;
+    margin-left: -1px;
+    line-height: 1;
+    font-size: 14px;
+    color: $grey;
+    background-color: #fff;
+    border-color: $grey-lighter;
+
+    &:focus, &:hover {
+      z-index: 1;
+    }
+    &:hover {
+      border-color: $grey;
+      box-shadow: 0 0 2px 2px $grey-lighter;
+    }
+    &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  img {
+    width: 12px;
+    display: inline-block;
+  }
+
+  &.btn-pagination--prev .icon {
+    transform: rotate(180deg);
+  }
+}

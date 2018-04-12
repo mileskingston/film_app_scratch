@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+/* Colors */
+/* Spacing */
+/* Font */
+/* Font size */
+/* Screen widths */
+.btn {
+  min-height: 35px;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.25s; }
+  .btn:hover {
+    text-decoration: none; }
+
+.btn--primary {
+  color: #fff;
+  border-color: #61DAFB; }
+  .btn--primary:hover {
+    background-color: #61DAFB; }

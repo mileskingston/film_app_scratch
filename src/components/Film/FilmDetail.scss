@@ -1,0 +1,151 @@
+@import '../../styles/variables.scss';
+
+.film-detail {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 2fr;
+}
+.film-detail__banner,
+.film-detail__main {
+  grid-column: 1/ -1;
+}
+
+.film-detail__banner {
+  position: relative;
+  grid-column: span 12;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 64, 64, 0.8);
+  }
+}
+
+.film-detail__content {
+  position: relative;
+  padding: $spacing-r;
+  z-index: 1;
+  color: #fff;
+
+  h1 {
+    font-size: 2rem;
+  }
+  h1 span {
+    color: $grey-lighter;
+  }
+  p, p:last-child {
+    margin-bottom: $spacing-r; 
+  }
+
+  .rating {
+    margin: $spacing-r 0;
+
+    .rating__total {
+      color: #fff;
+    }
+  }
+}
+
+.film-detail__poster {
+  display: none;
+  position: relative;
+  padding-top: $spacing-r;
+  padding-bottom: $spacing-r;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+
+  @media (min-width: $mobile-min) {
+    display: inline-block;
+  }
+}
+.col.film-detail__poster {
+  max-width: 300px;
+}
+
+.film-detail__genres {
+  padding-left: 0;
+  margin-top: $spacing-xxs;
+  margin-left: -1.5px;
+
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: $spacing-xs;
+    margin: $spacing-xxs;
+    border: 1px solid $grey-lighter;
+    border-radius: 3px;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.film-detail__main-primary {
+  padding: $spacing-r;
+  grid-column: 1 / -1;
+  color: $grey-dark;
+  background-color: #fff;
+
+  @media screen and (min-width: $tablet-p-min) {
+    grid-column-end: 10;
+  }
+}
+.film-detail__main-secondary {
+  padding: $spacing-r;
+  grid-column: 1 / -1;  
+  background-color: $grey-lightest;
+  @media screen and (min-width: $tablet-p-min) {
+    grid-column-start: 10;
+  }
+}
+
+.col.profile {
+  max-width: 50%;
+  flex-basis: 50%;
+  margin-bottom: $spacing-r;
+
+  @media screen and (min-width: $tablet-p-min) {
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+  }
+  @media screen and (min-width: $desk-min) {
+    max-width: 16.6667%;
+    flex-basis: 16.6667%;
+  }
+}
+
+.col.film-detail__main-title {
+  flex-basis: 100%;
+}
+
+.film-detail__main-primary .row {
+  margin-bottom: $spacing-r;
+}
+
+.film-detail__trailer {
+  position: relative;
+  padding-bottom: 56.25%; /* aspect ratio 16:9 */
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

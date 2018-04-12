@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.rating {
+  margin-top: $spacing-s;
+  line-height: 1;
+
+  .rating__star {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+  }
+  .rating__star--half {
+    width: 10px;    
+  }
+  
+  .rating__total {
+    display: inline-block;
+    margin-left: $spacing-s;
+    vertical-align: middle;
+    font-size: $font-s;
+    color: $grey;
+  }
+}

@@ -25,3 +25,8 @@ npm run build
 | ------ | ------ |
 | React | 16.3.1 |
 | Webpack | 4.5.0 |
+
+### To do's
+
+* autoprefixer
+* fix svg loader

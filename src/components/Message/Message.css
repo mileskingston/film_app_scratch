@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+/* Colors */
+/* Spacing */
+/* Font */
+/* Font size */
+/* Screen widths */
+.message {
+  margin: 20px 0;
+  padding: 10px;
+  text-align: left;
+  border-radius: 3px; }
+
+.message--success {
+  color: #2a6538;
+  background-color: #d4edda;
+  border: 1px solid #68c07d; }
+
+.message--info {
+  color: #9a7500;
+  background-color: #fff3cd;
+  border: 1px solid #ffce34; }
+
+.message--error {
+  color: #861721;
+  background-color: #f8d7da;
+  border: 1px solid #e15562; }

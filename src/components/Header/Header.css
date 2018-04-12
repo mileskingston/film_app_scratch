@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+/* Colors */
+/* Spacing */
+/* Font */
+/* Font size */
+/* Screen widths */
+.header {
+  padding: 20px;
+  color: white;
+  background-color: #29292A; }
+  .header a:hover {
+    text-decoration: none; }
+  .header .logo {
+    margin-bottom: 0;
+    font-size: 1.4em;
+    color: #fff; }
+    @media (min-width: 577px) {
+      .header .logo {
+        display: inline-block;
+        line-height: 35px;
+        height: 35px;
+        margin-right: 20px; } }
+    @media (max-width: 576px) {
+      .header .logo {
+        margin-bottom: 20px;
+        text-align: center; } }
+    .header .logo span {
+      color: #61DAFB; }
+  @media (min-width: 577px) {
+    .header .btn--back {
+      float: right; } }
+  @media (max-width: 576px) {
+    .header .btn--back {
+      text-align: center;
+      width: 100%; } }

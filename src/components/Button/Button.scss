@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.btn {
+  min-height: 35px;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.25s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn--primary {
+  color: #fff;
+  border-color: $brand-color;
+
+  &:hover {
+    background-color: $brand-color;
+  }
+}

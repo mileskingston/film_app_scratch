@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.form__search-box {
+  vertical-align: middle;
+  position: relative;
+
+  @media (min-width: $mobile-min) {
+    width: 300px;
+    float: right;
+  }
+
+  .input {
+    width: calc(100% - 35px);
+  }
+
+  .btn--search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    width: 35px;
+    background-color: $grey;
+    border-radius: 0;
+
+    img {
+      width: 22px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+/* Colors */
+/* Spacing */
+/* Font */
+/* Font size */
+/* Screen widths */
+.pagination {
+  padding: 20px 0;
+  margin: 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none; }
+
+.btn.btn--pagination {
+  position: relative;
+  display: block;
+  padding: 0 .75rem;
+  margin-left: -1px;
+  line-height: 1;
+  font-size: 14px;
+  color: #5c5c5c;
+  background-color: #fff;
+  border-color: #ccc; }
+  .btn.btn--pagination:focus, .btn.btn--pagination:hover {
+    z-index: 1; }
+  .btn.btn--pagination:hover {
+    border-color: #5c5c5c;
+    box-shadow: 0 0 2px 2px #ccc; }
+  .btn.btn--pagination:disabled {
+    opacity: 0.4;
+    pointer-events: none; }
+  .btn.btn--pagination img {
+    width: 12px;
+    display: inline-block; }
+  .btn.btn--pagination.btn-pagination--prev .icon {
+    transform: rotate(180deg); }

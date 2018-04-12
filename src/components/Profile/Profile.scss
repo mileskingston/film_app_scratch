@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.profile {
+  text-align: center;
+  
+  h4 {
+    margin-top: $spacing-s;
+    margin-bottom: 0;
+  }
+}

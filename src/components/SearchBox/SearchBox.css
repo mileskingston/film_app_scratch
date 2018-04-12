@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+/* Colors */
+/* Spacing */
+/* Font */
+/* Font size */
+/* Screen widths */
+.form__search-box {
+  vertical-align: middle;
+  position: relative; }
+  @media (min-width: 577px) {
+    .form__search-box {
+      width: 300px;
+      float: right; } }
+  .form__search-box .input {
+    width: calc(100% - 35px); }
+  .form__search-box .btn--search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    width: 35px;
+    background-color: #5c5c5c;
+    border-radius: 0; }
+    .form__search-box .btn--search img {
+      width: 22px; }
