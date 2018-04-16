@@ -8,8 +8,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ReactWebpackStarter: <https://github.com/mileskingston/react_webpack_starter>
 
 ### To do's
-
+* merge new react_webpack_starter into branch
 * autoprefixer
+* fix error: Warning: Can't call setState (or forceUpdate) on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+    in LazyLoadImage (created by Film)
+    in a (created by Link)
+    in Link (created by Film)
+    in div (created by Film)
+    in Film (created by Connect(Film))
+    in Connect(Film) (created by Films)
 
 ### Stage 2
 
