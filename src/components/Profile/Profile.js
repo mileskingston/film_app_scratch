@@ -1,42 +1,56 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { fetchProfile } from '../../actions/index';
 import LazyLoadImage from '../LazyLoadImage/LazyLoadImage';
 import Placeholder from '../Placeholder/Placeholder';
 import constants from '../../utils/constants';
 import './Profile.css';
 
-function Profile(props) {
+class Profile extends PureComponent {
+  constructor(props) {
+    super(props);
 
-  function renderRole() {
-    if (props.data.job) {
+    this.fetchProfile = this.fetchProfile.bind(this);
+  }
+
+  fetchProfile() {
+    this.props.fetchProfile(this.props.data.id);
+  }
+
+  renderRole() {
+    if (this.props.data.job) {
       return (
-        <p className="profile__job">{props.data.job}</p>
+        <p className="profile__job">{this.props.data.job}</p>
       );
-    } else if (props.data.character) {
+    } else if (this.props.data.character) {
       return (
-        <p className="profile__character">{props.data.character}</p>
+        <p className="profile__character">{this.props.data.character}</p>
       );
     }
   }
 
-  return (
-    <div className="col profile">
+  render() {
+    const { props } = this;
 
-      {props.data.profile_path ? (
-        <LazyLoadImage
-          src={`${constants.IMG_BASE}w138_and_h175_face${props.data.profile_path}`}
-          alt={props.data.name}
-          width="138"
-          height="175"
-        />) : (
-          <Placeholder width="138" height="175" fixedWidth={true} />
-        )
-      }
+    return (
+      <div className="col profile" onClick={() => {props.fetchProfile()}}>
+         {props.data.profile_path ? (
+          <LazyLoadImage
+            src={`${constants.IMG_BASE}w138_and_h175_face${props.data.profile_path}`}
+            alt={props.data.name}
+            width="138"
+            height="175"
+          />) : (
+            <Placeholder width="138" height="175" fixedWidth={true} />
+          )
+        }
 
-      <h4>{props.data.name}</h4>
-      { renderRole() }
-    </div>
-  );
+        <h4>{props.data.name}</h4>
+        { this.renderRole() }
+      </div>
+    );
+  }
 } 
 
 Profile.displayName = 'Profile';
@@ -50,4 +64,10 @@ Profile.propTypes = {
   }).isRequired
 };
 
-export default Profile;
+function mapStateToProps(state) {  
+  return {
+    profile: state.profile
+  }
+}
+
+export default connect(mapStateToProps, {fetchProfile})(Profile);

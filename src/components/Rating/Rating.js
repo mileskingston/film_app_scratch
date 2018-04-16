@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Icon from '../Icon/Icon';
 import './Rating.css';
-// import starFull from '../../images/starFull.svg';
-// import starHalf from '../../images/starHalf.svg';
 
 function Rating(props) {
   function renderStars() {
@@ -13,20 +12,21 @@ function Rating(props) {
 
     for (let i = 1; i <= MAX_COUNT; i++) {
       if (i <= value) {
-        // pushImage(starFull);       
+        pushImage('starFull');   
       }
 
       if (hasHalfItem && (i - 1 === value)) {
-        // pushImage(starHalf, 'rating__star--half');
+        pushImage('starHalf');
       }
 
-      function pushImage(imgUrl, addClass) {
+      function pushImage(iconName) {
         items.push(
-          <img 
-            className={`rating__star ${addClass ? addClass : ''}`}
+          <Icon
             key={i}
-            src={imgUrl}
-            alt="star icon"
+            name={iconName}
+            width={iconName === 'starFull' ? 22 : 11}
+            fill="#FFCD00"
+            stroke="#FFCD00"
           />
         );
       }

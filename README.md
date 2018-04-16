@@ -7,9 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ReactWebpackStarter: <https://github.com/mileskingston/react_webpack_starter>
 
+### To do's
+
+* autoprefixer
+
 ### Stage 2
 
-* Icon component
 * Autocomplete searchbox
 * creat slider component
 * create actor/crew profiles pages
@@ -23,8 +26,6 @@ ReactWebpackStarter: <https://github.com/mileskingston/react_webpack_starter>
 * improve performance
 * improve code coverage - Pagination, FilmSearch, App
 * Testing store and other redux components
-
-### To do's
 
 # React and webpack starterpoint
 
@@ -53,8 +54,3 @@ npm run build
 | ------ | ------ |
 | React | 16.3.1 |
 | Webpack | 4.5.0 |
-
-### To do's
-
-* autoprefixer
-* fix error when cache cleared and no data

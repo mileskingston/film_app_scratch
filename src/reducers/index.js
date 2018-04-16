@@ -1,6 +1,4 @@
-export default function reducer(
-  state, action) {
-
+export default function reducer(state, action) {
   const MAX_NUM = 6;
 
   switch (action.type) {
@@ -41,6 +39,12 @@ export default function reducer(
       return {
         ...state,
         filmRecommendations: action.data.results.splice(0, 10)
+      }
+    }
+    case "FETCH_PROFILE_SUCCESS": {
+      return {
+        ...state,
+        profile: action.data.results
       }
     }
     case "FETCH_ERROR": {

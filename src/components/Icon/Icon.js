@@ -84,7 +84,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   classes: '',
   width: 20,
-  height: '',
+  height: null,
   stroke: '',
   fill: ''
 };
